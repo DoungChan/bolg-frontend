@@ -1,9 +1,14 @@
 "use client";
 import React from "react";
-
-const Blogs = () => {
+import { motion } from "framer-motion";
+const Blogs: React.FC = () => {
   return (
-    <div className="w-full">
+    <motion.div
+      className="w-full "
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 0.5 }}
+    >
       <ul className="py-5">
         <li className="border-b-[1px]">
           <div>
@@ -46,7 +51,7 @@ const Blogs = () => {
           </div>
         </li>
       </ul>
-    </div>
+    </motion.div>
   );
 };
 
