@@ -20,3 +20,19 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: black;
 }
+
+/* customized scrollbar on everything */
+*::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+  height: 100%;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #332c2c;
+  border-radius: 1rem;
+  width: 0.5rem;
+}
